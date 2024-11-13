@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julius - Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "4M0jj1o2D3tUnFoGU",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="hero">
+            <h1 class="animate__animated animate__backInDown">Hi, I'm Julius</h1>
+            <p class="animate__animated animate__fadeIn">App Developer | Engineer</p> 
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="card-inner"> 
+                        <div class="card-front">
+                            
+                            <h4>
+                                I'm Julius, a dedicated app developer with a passion for crafting innovative solutions to real-world problems. With over two years of experience, I've honed my skills in Python, Java, and web development to create efficient and user-friendly applications.
+                            </h4>
+                        </div>
+                        <div class="card-back">
+                            <h4>
+                                I'm driven by a desire to leverage technology to improve people's lives, and I'm constantly seeking new challenges and opportunities to learn and grow.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h4>
+                                I have hands-on experience with a range of development projects, from creating mobile apps for school projects to working on web applications for larger organizations.
+                            </h4>
+                        </div>
+                        <div class="card-back">
+                            <h4>
+                                I’m comfortable with all stages of the development process—from concept and design to coding, testing, and deployment—and I’m proficient with a variety of development tools and frameworks to support quality and efficiency in my work.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h4>
+                                Beyond my technical skills, I'm a strong communicator and collaborator. I enjoy working with clients to understand their needs and translate them into actionable solutions.
+                            </h4>
+                        </div>
+                        <div class="card-back">
+                            <h4>
+                                I'm also a team player and believe that effective collaboration is essential to achieving project success.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Doodler</h3>
+                    <p>A simple project I made with python. This CONSOLE APP lets you turn an image into a somewhat artistic doodle which is made with stings of characters</p>
+                    <div class="contentContainer">
+                        <img src="images/raw.png" alt="raw image" class="content">
+                        <img src="images/doodled.png" alt="doodled image" class="content">
+                    <p>doodler works by having the user input any image they wants. Then the app translate it to black and white. Then it will give a character based on how dark a pixel is.</p>
+                    </div>
+                    <a href="https://github.com/neveront/doodle">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Password Generator</h3>
+                    <p>This project is made using python. With the help of FLET, I was able to create a flutter app which can be opened with your phone, as a pc app, or even in the web browser</p>
+                    <div class="contentContainer">
+                        <img src="images/entry.png" alt="entry" class="content">
+                        <img src="images/exit.png" alt="exit" class="content">
+                    </div>
+                    <p>It works by letting the user which character sets does he/she wants like number,letters or punctuations. The app then generates a password using those character sets. Then after clicking Get password, a password will be copied to your clipboard</p>
+                    <a href="#">View Project</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="project">
+                <img src="images/python.png" alt="python" class="logo" title="Python">
+                <img src="images/html.png" alt="html" class="logo" title="Html">
+                <img src="images/css.png" alt="css" class="logo" title="Css">
+                <img src="images/java.png" alt="java" class="logo" title="Java">
+                <img src="images/git.png" alt="git" class="logo" title="Git">
+                <img src="images/github.png" alt="github" class="logo" title="Github">
+                <img src="images/mysql.png" alt="mysql" class="logo" title="Mysql">
+                <img src="images/mariadb.png" alt="mariadb" class="logo" title="Mariadb">
+                <img src="images/mongodb.png" alt="mongodb" class="logo" title="Mongodb">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form method="post" action="#">
+                <input id="name" type="text" name="name" placeholder="Your Name" required>
+                <input id="email" type="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="button" onclick="sendMail()">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 kirikoto. All rights reserved.</p>
+    </footer>
+</body>
+</html>

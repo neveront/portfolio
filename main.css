@@ -1,0 +1,337 @@
+/* General styling */
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #17141d;
+    text-align: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    /* padding: 60px; */
+    color: #e0e0e0; /* Soft light gray text */
+    background-color: #121212; /* Deep dark background */
+}
+
+header {
+    background: #1f1f1f; /* Slightly lighter dark gray */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feb47b; /* Soft warm highlight on hover */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    background-image: linear-gradient(to right, #5c258d, #4389a2); /* Purple to blue gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: #dcdcdc; /* Light gray text for subheading */
+}
+
+/* Main section */
+main {
+    padding: 20px;
+    background-color: #121212; /* Keeps the dark background consistent */
+}
+
+section {
+    margin: 40px 0;
+    padding-top: 50px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    flex: 1 1 45%;
+    background: #2a2a2a; /* Dark background for projects */
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #3a3a3a, #1f1f1f); /* Dark gradient */
+    text-align: center;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contentContainer {
+    flex: 1 1 45%;
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 200px;
+    height: 200px;
+}
+.content:hover{
+    position: center;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    z-index: 1000;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project p{
+    color: #dcdcdc; /* Light gray text for subheading */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4389a2; /* Soft blue button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #feb47b; /* Soft warm button hover */
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f; /* Match footer with the header */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f; /* Dark background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Darker background for input fields */
+    color: #fff; /* White text inside input fields */
+    transition: background-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #3a3a3a; /* Lighter background when focused */
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4389a2; /* Soft blue for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #feb47b; /* Warm orange button hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.logo {
+    padding: 20px;
+    max-height: 100px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    max-height: 105px;
+}
+
+/* Gradient Text */
+h1, h2, h3, h4{
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Soft gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h4, p{
+    font-family: 'Helvetica', Times, serif;
+    text-align: center;
+}
+
+/* Cart list and card styles */
+.cart-list {
+    display: flex;
+    padding: 3rem;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+/* Navbar hidden for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* About Section */
+#about {
+    margin: 40px 0;
+    padding-top: 50px;
+    background-color: #121212; /* Dark background */
+}
+
+#about h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Text */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* Card Container */
+.about-card {
+    perspective: 1000px; /* Add perspective to enable 3D effect */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Flip Effect */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+/* Card Front */
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    padding: 20px;
+    color: #e0e0e0;
+    font-family: 'Helvetica', Times, serif;
+}
+
+/* Card Front Styles */
+.card-front {
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Back Styles */
+.card-back {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg); /* Start with the back flipped */
+}
+
+/* Hover Effect: Flip the Card */
+.about-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.about-card:hover .card-front {
+    background: #333; /* Change color on flip */
+}
+
+.about-card:hover .card-back {
+    background: #2a2a2a; /* Change color on flip */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .card-inner {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}

@@ -90,13 +90,13 @@ section {
     border-radius: 5px;
 }
 
-.content {
+ .content {
     padding-left: 50px;
     padding-right: 50px;
     width: 200px;
-    height: 200px;
+    height: 200px; 
 }
-.content:hover{
+/* .content:hover{
     position: center;
     top: 0;
     left: 0;
@@ -105,7 +105,7 @@ section {
     z-index: 1000;
     object-fit: contain;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .project p{
     color: #dcdcdc; /* Light gray text for subheading */

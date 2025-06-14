@@ -335,3 +335,32 @@ h4, p{
         height: 250px; /* Adjust height for smaller screens */
     }
 }
+
+/* Centered Paragraph Container */
+.centered-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.centered-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.centered-container p,
+.centered-container ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: gray;
+    margin: auto;
+    text-align: center;
+}
+
+.centered-container ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-top: 1rem;
+}
